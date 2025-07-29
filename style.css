@@ -1,0 +1,136 @@
+:root {
+  --indigo-dark: #1e1b4b;
+  --indigo-accent: #4338ca;
+  --white: #ffffff;
+  --text: #e0e7ff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: var(--text);
+}
+
+/* Главная */
+.hero {
+  height: 100vh;
+  text-align: center;
+  padding: 5vh 5vw;
+  background: linear-gradient(to bottom, var(--indigo-dark), var(--indigo-accent));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .logo {
+  width: 60vw;
+  max-width: 20rem;
+  border-radius: 50%;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+  margin-bottom: 3vh;
+}
+
+.hero h1 {
+  font-size: 5vw;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 70vw;
+  margin-bottom: 3vh;
+}
+
+.hero a {
+  background: var(--white);
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.hero a:hover {
+  background: #e5e7eb;
+}
+
+/* Слайдер */
+.slider-section {
+  background: linear-gradient(to bottom right, #1e3a8a, #312e81);
+  padding: 5vh 5vw;
+}
+
+.serviceSlider .swiper-slide {
+  background: rgba(255,255,255,0.05);
+  border-radius: 1rem;
+  padding: 4vw;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.serviceSlider h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.serviceSlider ul li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Портфолио */
+.portfolio {
+  padding: 5vh 5vw;
+  background: linear-gradient(to bottom right, #0f172a, #1e1b4b);
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.portfolio .swiper-slide {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.portfolio audio {
+  width: 90%;
+  max-width: 40rem;
+  margin-top: 1vh;
+}
+
+/* Контакт */
+.contact {
+  padding: 5vh 5vw;
+  background: #0f172a;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
