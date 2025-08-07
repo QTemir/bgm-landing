@@ -64,21 +64,30 @@ body {
 }
 
 .serviceSlider .swiper-slide {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 1rem;
   padding: 4vw;
   width: 100% !important;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Центрирует по горизонтали */
+  text-align: center;      /* Центрирует текст внутри */
 }
 
+/* Центрируем заголовки */
 .serviceSlider h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  text-align: center;     /* на всякий случай */
 }
 
-.serviceSlider ul li {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+/* Центрируем элементы списка */
+.serviceSlider ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 /* Портфолио */
