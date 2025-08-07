@@ -1,4 +1,4 @@
-// Первый свайпер (сервисы)
+// Инициализация свайперов
 const serviceSwiper = new Swiper('.serviceSlider', {
   loop: true,
   spaceBetween: 30,
@@ -9,7 +9,6 @@ const serviceSwiper = new Swiper('.serviceSlider', {
   },
 });
 
-// Портфолио свайпер
 const portfolioSwiper = new Swiper('.portfolioSlider', {
   loop: true,
   spaceBetween: 20,
@@ -19,3 +18,18 @@ const portfolioSwiper = new Swiper('.portfolioSlider', {
     clickable: true,
   },
 });
+
+// Остановить другие аудиоплееры при запуске одного
+const audioPlayers = document.querySelectorAll('audio');
+
+audioPlayers.forEach(audio => {
+  audio.addEventListener('play', () => {
+    audioPlayers.forEach(otherAudio => {
+      if (otherAudio !== audio) {
+        otherAudio.pause();
+        otherAudio.currentTime = 0;
+      }
+    });
+  });
+});
+
